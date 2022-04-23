@@ -1,0 +1,69 @@
+.about-content {
+    height: 707px;
+    position: relative;
+
+    .about-main-image {
+        height: 378.75px;
+        width: 979.03px;
+        background-image: linear-gradient(rgba(#FFD140,.8),rgba(#FFD140,.8)),
+        url(./../images/about.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 85.5px;
+        left: 151px;
+        
+        .our-history {
+            position: absolute;
+            top: 356px;
+            font-size: 25px;
+            font-family: gillSans;
+        }
+
+        .our-history-bottom-border {
+            position: absolute;
+            height: 2px;
+            width: 229px;
+            background-color: black;
+            bottom: -15.8px;
+        }
+        
+    }
+    .our-history-content {
+        height: 96px;
+        width: 980px;
+        position: absolute;
+        top: 516.5px;
+        left: 151px;
+        font-family: gillSans-light;
+        line-height: 20px;
+        font-size: 16px;
+        font-style: italic;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-content {
+        .about-main-image {
+            height: 300px;
+            width: 600px;
+            left: 100px;
+
+            .our-history {
+                top: 277px;
+            }
+        }
+
+        .our-history-content {
+            width: 600px;
+            left: 100px;
+            top: 450px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+}

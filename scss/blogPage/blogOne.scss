@@ -1,0 +1,116 @@
+.blogs-hero-image {
+    height: 300px;
+    width: 981px;
+    background-image: linear-gradient(
+        rgba(#EE4367,.7),
+        rgba(#EE4367,.7)),
+        url(./../images/blog.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 55.5px;
+    margin-bottom: 57px;
+    position: relative;
+
+    .blogs-dates {
+        height: 155.25px;
+        width: 155.25px;
+        background-color: #EE4367;
+        position: absolute;
+        top: 72.4px;
+        left: 412.4px;
+        
+        .blogsNumbers {
+            font-size: 55px;
+            color: #fff;
+            font-family: gillSans;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .blogsMonths {
+            font-size: 31px;
+            color: #fff;
+            font-family: gillSans;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.blogs-header-title {
+    margin-left: 151px;
+    margin-bottom: 30px;
+    font-family: gillSans;
+    font-size: 20px;
+    color: #EE4367;
+}
+
+.blogs-header-content-one {
+    margin-left: 151px;
+    margin-bottom: 33px;
+    font-family: gillSans-light;
+    font-size: 20px;
+    height: 125px;
+    width: 856px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.blogs-header-content-two {
+    margin-left: 151px;
+    margin-bottom: 57px;
+    font-family: gillSans-light;
+    line-height: 22px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.blogs-header-content-three {
+    margin-left: 151px;
+    margin-bottom: 151px;
+    font-family: gillSans-light;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+         
+@media screen and (max-width: 800px) {
+    .blogs-hero-image {
+        height: 250px;
+        width: 550px;
+
+        .blogs-dates {
+            top: 50px;
+            left: 205px;
+        }
+    }
+
+    .blogs-header-content-one {
+        width: 525px;
+        margin-bottom: 50px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .blogs-header-content-two {
+        width: 525px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .blogs-header-content-three {
+        width: 525px;
+        margin-bottom: 70px;
+
+        br {
+            display: none;
+        }
+    }
+}

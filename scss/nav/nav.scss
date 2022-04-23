@@ -1,0 +1,59 @@
+@font-face {
+    font-family: gillSans;
+    src: url(../../fonts/GillSans.ttc);
+  }
+
+nav {
+    height: 92.5px;
+    max-width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+    font-family: gillSans;
+   
+
+    .links {
+        margin-left: 570px;
+    }
+
+    a {
+        margin-right: 13.5px;
+        margin-left: 13.5px;
+        text-decoration: none;
+        font-size: 15px;
+    
+    }
+
+    span {
+        color: #EE4367;
+    }
+
+    .blackText {
+        color: black;
+        border-bottom: 1px solid white;
+    }
+
+    .whiteText {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        max-width: 650px;
+        .logo {
+            margin-left: 0px;
+        }
+
+        .links {
+            margin-left: 220px;
+        }
+
+        a {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}

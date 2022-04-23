@@ -1,0 +1,90 @@
+@font-face {
+    font-family: gillSans-light;
+    src: url(./../fonts/GillSans-Light.ttf);
+}
+
+.contact-title {
+    margin-left: 151px;
+    margin-top: 65.5px;
+    margin-bottom: 10.5px;
+    font-size: 25px;
+    font-family: gillSans;
+
+}
+
+.contact-title-bottom-border {
+    margin-left: 151px;
+    margin-bottom: 65.5px;
+    height: 2px;
+    width: 229px;
+    background: #000;
+}
+
+.contact-form {
+    margin-left: 151px;
+    display: flex;
+    flex-direction: column;
+
+    .name, .company, .email, input {
+        width: 529px;
+        height: 60px;
+        margin-bottom: 21px;
+        background-color: #F5F5F5;
+        border: none;
+        padding-left: 21px;
+        color: #707070;
+    }
+
+    .message {
+        width: 529px;
+        height: 199px;
+        background-color: #F5F5F5;
+        border: none;
+    }
+
+    .contact-map {
+        height:442px;
+        width: 400px;
+        background-image: url(./../images/map.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        margin-top: -463px;
+        margin-left: 570px;
+    }
+}
+
+.send-message-btn {
+    height: 60px;
+    width: 167px;
+    background-color: #EE4367;
+    font-family: gillSans;
+    margin-bottom: 90px;
+    margin-left: 151px;
+    margin-top: 21px;
+
+    a {
+        display: flex;
+        justify-content: center;
+        padding-top: 21px;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact-title-bottom-border {
+        margin-bottom: 25px;
+    }
+    .contact-form {
+        .contact-map {
+            margin-top: 0px;
+            margin-left: 65px;
+        }
+    }
+
+    .send-message-btn {
+        margin-left: 330px;
+    }
+    
+}

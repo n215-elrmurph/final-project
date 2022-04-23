@@ -1,0 +1,230 @@
+@font-face {
+    font-family: gillSans;
+    src: url(./../fonts/GillSans.ttc);
+  }
+
+  @font-face {
+      font-family: PT;
+      src: url(./../fonts/PTSerif-Regular.ttf);
+  }
+
+.home-page-header {
+        background-image: linear-gradient(
+            rgba(#FFD140,.7),
+            rgba(#FFD140,.7)), 
+            url(./../images/home-hero.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        margin-top: -93px;
+        z-index: -5;
+        position: relative;
+
+        .home-page-header-title {
+            color: #FFF;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            padding-top: 156px;
+            font-family: PT;
+        }
+
+        .home-page-header-title2 {
+            color: #EE4367;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            font-family: gillSans;
+            font-style: italic;
+        }
+
+        .home-page-header-content {
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            font-family: gillSans;
+            font-style: italic;
+        }
+
+        .home-page-header-btn {
+            background-color: #EE4367;
+            width: fit-content;
+            padding: 11px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                color: #fff;
+                font-family: gillSans;
+            }
+        }
+    }
+
+    .home-page-content1 {
+        height: 300px;
+        margin: 0 auto;
+        
+
+        .home-page-content1-words {
+            color: #FFD140;
+            margin-top: 77px;
+            padding-left: 247px;
+            font-size: 15px;
+            font-family: gillSans;
+        }
+
+        .home-page-content1-name {
+            color: #EE4367;
+            margin-top: 20px;
+            padding-left: 247px;
+            font-size: 15px;
+            font-family: PT;
+        }
+
+        .home-page-content1-name-desc {
+            color: #A8A8A8;
+            margin-top: 5px;
+            padding-left: 247px;
+            font-size: 10px;
+            font-family: PT;
+        }
+    }
+
+    .home-upcoming-events {
+        min-height: 320px;
+        background-color: #540D6E;
+        margin-top: -85px;
+
+        .home-upcoming-events-title {
+            color: #fff;
+            font-size: 25px;
+            font-family: gillSans;
+            padding-top: 50px;
+            padding-left: 40px;
+        }
+
+        .border-bottom-events {
+            height: 2px;
+            width: 392px;
+            background-color: white;
+            margin-left: 40px;
+            margin-top: 10.5px;
+        }
+
+        .event-dates {
+            width: 1198px;
+            margin-left: 40px;
+            display: flex;
+
+            .upcoming-events-dates {
+                margin-right: 180px;
+                height: 60px;
+                width: 60px;
+                background-color: #EE4367;
+                font-family: gillSans;
+                margin-top: 34.5px;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+    
+            .upcoming-events-day {
+                font-size: 22px;
+                padding-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .upcoming-events-month {
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .upcoming-events-date-title {
+                color: #fff;
+                width: 140px;
+                margin-left: 75px;
+                margin-top: -49px;
+                font-size: 15px;
+                font-family: gillSans;
+            }
+
+            .upcoming-events-date-content {
+                width: 140px;
+                font-size: 13px;
+                font-family: gillSans;
+                color:#EE4367;
+                margin-top: 10px;
+                margin-left: 75px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .home-page-content1 {
+            max-width: 600px;
+
+            br {
+                display: none;
+            }
+
+            .home-page-content1-words {
+                padding-left: 45px;
+                
+            }
+
+            .home-page-content1-name {
+                padding-left: 45px;
+            }
+
+            .home-page-content1-name-desc {
+                padding-left: 45px;
+            }
+        }
+
+        .home-upcoming-events {
+            padding-bottom: 40px;
+
+            .home-upcoming-events-title {
+                padding-left: 230px;
+            }
+            .border-bottom-events {
+                max-width: 315px;
+                margin-left: 230px;
+            }
+
+            .event-dates {
+                flex-direction: column;
+                height: 500px;
+                margin-top: -10px;
+                padding-left: 190px;  
+
+                    .upcoming-events-dates {
+                        .upcoming-events-date-title {
+                            width: 250px;
+                            }
+
+                            .upcoming-events-date-content {
+                               width: 250px;
+                               br {
+                                display: none;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+    

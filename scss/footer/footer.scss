@@ -1,0 +1,101 @@
+footer {
+    height: 455px;
+    background-color: #EE4367;
+    margin: 0 auto;
+
+    .footer-logo {
+        padding-top: 36px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .footer-address {
+        padding-top: 46px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;       
+        font-size: 16px;
+        font-family: gillSans;
+        color: #fff;
+        line-height: 25px;
+    }
+
+    .footer-input {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        display: flex;
+
+        input {
+            width: 529px;
+            height: 60px;
+            margin-top: 46px;
+            padding-left: 20px;
+            background-color: #F56B88;
+            border: none;
+            font-size: 16px;
+            color: #fff;
+            opacity: 75%;
+        }
+    
+        .footer-input-btn {
+            height: 60px;
+            width: 167px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 46px;
+            font-family: gillSans;
+        }
+
+        a {
+            text-decoration: none;
+            color:#EE4367;
+        }
+    }
+
+    .footer-social-media {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        a {
+            font-size: 230%;
+            color: white;
+            margin-left: 7px;
+            margin-right: 7px;
+        }
+    }
+
+    .copyright {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 43px;
+        color: #fff;
+        font-size: 12px;
+        font-family: gillSans;
+        opacity: 50%;
+    }   
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        .footer-input {
+            padding-left: 15px;
+
+            input {
+                width: 400px;
+            }
+
+            .footer-input-btn {
+                margin-right: 15px;
+            }
+        }
+    }
+}

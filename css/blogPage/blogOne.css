@@ -1,0 +1,6 @@
+.blogs-hero-image {
+  height: 300px;
+  width: 981px;
+  background-color: pink;
+  background-image: url(./../images/blog.jpeg);
+}
